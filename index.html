@@ -24,7 +24,7 @@ html = f'''<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHAMP | Anytime, Anywhere</title>
+<title>CHAMAR | Anytime, Anywhere</title>
 <style>
 *{{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}}
 body{{background:#080808;color:#fff}}
@@ -60,9 +60,9 @@ footer h3{{color:#ffd166;font-size:28px;margin-bottom:12px}}
 </style>
 </head>
 <body>
-<nav><div class="logo">CHAMP</div><div><a href="#about">About</a><a href="#services">Services</a><a href="#discount">Discount</a><a href="#contact">Contact</a></div></nav>
-<header><div class="hero"><h1>CHAMP</h1><div class="tagline">Anytime, Anywhere — When You Want, I Am Available</div><p>3+ years experienced service provider. Friendly, reliable and available for hourly booking with special student discounts.</p><a class="btn" href="#services">View Services</a></div></header>
-<section id="about"><h2>About</h2><div class="about">CHAMP provides quick and dependable services anytime and anywhere. With 3+ years of experience, he is ready for events, student support, outdoor help, and personal assistance on an hourly basis.</div></section>
+<nav><div class="logo">CHAMAR</div><div><a href="#about">About</a><a href="#services">Services</a><a href="#discount">Discount</a><a href="#contact">Contact</a></div></nav>
+<header><div class="hero"><h1>CHAMAR</h1><div class="tagline">Anytime, Anywhere — When You Want, I Am Available</div><p>3+ years experienced service provider. Friendly, reliable and available for hourly booking with special student discounts.</p><a class="btn" href="#services">View Services</a></div></header>
+<section id="about"><h2>About</h2><div class="about">CHAMAR provides quick and dependable services anytime and anywhere. With 3+ years of experience, he is ready for events, student support, outdoor help, and personal assistance on an hourly basis.</div></section>
 <section id="services"><h2>Services & Rates</h2><p class="sub">All photos are used as service cards. Prices are sample hourly rates.</p><div class="cards">
 '''
 services = [
@@ -80,8 +80,8 @@ for i,(title,desc,price) in enumerate(services):
 html += '</div></section><section id="discount"><h2>Student Discounts</h2><div class="discounts"><div class="discount">AVB Students <span>50% OFF</span></div><div class="discount">12A Students <span>80% OFF</span></div></div></section><section><h2>Gallery</h2><div class="gallery">'
 for url in data_urls:
     html += f'<img src="{url}">'
-html += '</div></section><footer id="contact"><h3>Book Now</h3><p>Call / WhatsApp: +91 98765 43210</p><p>Email: champservice@gmail.com</p></footer></body></html>'
+html += '</div></section><footer id="contact"><h3>Book Now</h3><p>Call / WhatsApp: +91 98765 43210</p><p>Email: CHAMARservice@gmail.com</p></footer></body></html>'
 
-out = Path("/mnt/data/champ_single_file_website.html")
+out = Path("/mnt/data/CHAMAR_single_file_website.html")
 out.write_text(html, encoding="utf-8")
 out
